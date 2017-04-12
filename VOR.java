@@ -40,7 +40,7 @@ public class VOR {
 
         /*gets the TOFROM flag to true if it's to and false if it's false
         depending on if it's on the upper quadrants of tower or lower quadrants of
-        the tower respectivel*/
+        the tower respective*/
         public String chkToFrom(VORTower tower){
             if(getRadial() < 90){
                 if(((tower.getRadial()> (270 + getRadial())) && tower.getRadial() <= 360) || (tower.getRadial()>= 0) && (tower.getRadial() < 90 + getRadial())){
