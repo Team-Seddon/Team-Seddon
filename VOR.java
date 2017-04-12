@@ -126,7 +126,7 @@ public class VOR {
         public VORTower(int frequency, int radial){
             towerfrequency = frequency;
         }
-        //sets radial value which is the position of hte plane to the tower.
+        //sets radial value which is the position of the plane to the tower.
         public void setRadial(int number){
             radial = number;
         }
