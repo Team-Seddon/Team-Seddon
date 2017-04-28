@@ -103,17 +103,15 @@ public class VOR {
           }
         }
       }
-			else {
         if(((tower.getRadial() - 180) % 360) - getRadial() == 0){
           System.out.println("Deflection needle is at 0. Continue straight ahead.\n");
         }
-      }
       return 0;
     }
     public boolean linkTower(VORTower tower, int frequency){
       if(frequency == tower.getFrequency()){
         linkedfrequency = tower.getFrequency();
-        System.out.println("Tower Linked on frequency: " + linkedfrequency"\n");
+        System.out.println("Tower Linked on frequency: " + linkedfrequency + "\n");
         return true;
       }
       else{
